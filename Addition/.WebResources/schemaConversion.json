@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/Addition/Service Descriptors/addition.Addition-Addition.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.org/AdditionTwoNumbers"
+}]}

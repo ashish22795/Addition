@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_4urw8GS7EeiVTe7MUuOANA" targetNamespace="http://tns.tibco.com/bw/composite/Addition" name="Addition" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_F-3NkmS8EeiVTe7MUuOANA" name="addition" promote="ComponentAddition/addition">
+    <sca:interface.wsdl xmi:id="_F-3NlmS8EeiVTe7MUuOANA" interface="http://xmlns.example.com/20180531154925PLT#wsdl.interface(addition)" scaext:wsdlLocation="../Processes/addition/Addition.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_F_A-kGS8EeiVTe7MUuOANA" name="RestService" path="/addition" docBasePath="http://localhost:7777/Addition" docResourcePath="Addition" basePath="/" connector="addition.Addition" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/addition.Addition-Addition.json">
+      <operation xmi:id="_F_A-kWS8EeiVTe7MUuOANA" operationName="post" nickname="post-addition" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_F_dqgGS8EeiVTe7MUuOANA"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_F_A-kmS8EeiVTe7MUuOANA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_5IqXMGS7EeiVTe7MUuOANA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5IzhIGS7EeiVTe7MUuOANA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5IzhIWS7EeiVTe7MUuOANA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5IzhImS7EeiVTe7MUuOANA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5I9SIGS7EeiVTe7MUuOANA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5I9SIWS7EeiVTe7MUuOANA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5JHDIGS7EeiVTe7MUuOANA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5JHDIWS7EeiVTe7MUuOANA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5JHDImS7EeiVTe7MUuOANA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_F-uDoGS8EeiVTe7MUuOANA" name="ComponentAddition" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_F-uDoWS8EeiVTe7MUuOANA" processName="addition.Addition"/>
+    <sca:service xmi:id="_F-3NkGS8EeiVTe7MUuOANA" name="addition">
+      <sca:interface.wsdl xmi:id="_F-3NkWS8EeiVTe7MUuOANA" interface="http://xmlns.example.com/20180531154925PLT#wsdl.interface(addition)" scaext:wsdlLocation="../Processes/addition/Addition.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
