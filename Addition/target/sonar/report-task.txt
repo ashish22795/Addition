@@ -2,5 +2,5 @@ projectKey=com.tibco.bw:Addition
 serverUrl=http://localhost:9000
 serverVersion=7.0.0.36138
 dashboardUrl=http://localhost:9000/dashboard/index/com.tibco.bw:Addition
-ceTaskId=AWO1vQr4ys69k3nlNzN4
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWO1vQr4ys69k3nlNzN4
+ceTaskId=AWPZFCjb0IgGi28o52lP
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWPZFCjb0IgGi28o52lP
